@@ -72,9 +72,19 @@ function App() {
               // If not in edit mode, show the reminder text
               <span onClick={() => startEditing(index)}>{reminder}</span>
             )}
-            <button className="delete-btn" onClick={() => deleteReminder(index)}>
-              Delete
-            </button>
+            <button className="delete-btn" onClick={() => deleteReminder(index)}
+            style={{
+
+            background: "none",
+            border: "none",
+            color: "red",
+            fontSize: "48px",
+            cursor: "pointer",
+            marginLeft: "10px",
+            }}
+                                                 >
+                                                   ×
+                                                 </button>
           </li>
         ))}
       </ul>
